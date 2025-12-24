@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scenario>
+
+    <!-- ===================== -->
+    <!-- MATERIALS -->
+    <!-- ===================== -->
+    <materials>
+        <material name="plastic" density="400" restitution="0.3"/>
+    </materials>
+
+    <!-- ===================== -->
+    <!-- LOOKS -->
+    <!-- ===================== -->
+    <looks>
+        <look name="Yellow" rgb="1.0 0.9 0.0" roughness="0.4"/>
+    </looks>
+
+    <!-- ===================== -->
+    <!-- ENVIRONMENT (MANDATORY NED) -->
+    <!-- ===================== -->
+    <environment>
+
+        <!-- REQUIRED -->
+        <ned latitude="40.0" longitude="3.0" altitude="0.0"/>
+
+        <!-- OCEAN -->
+        <ocean>
+            <water density="1030.0" jerlov="0.2" temperature="15.0"/>
+            <waves height="0.0"/>
+        </ocean>
+
+    </environment>
+
+    <!-- ===================== -->
+    <!-- FLOATING DYNAMIC BOX -->
+    <!-- ===================== -->
+    <dynamic name="FloatingBox"
+             type="box"
+             physics="floating"
+             buoyant="true">
+
+        <dimensions xyz="0.4 0.4 0.2"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+
+        <material name="Steel"/>
+        <look name="Yellow"/>
+
+        <!-- Start slightly above water -->
+        <world_transform xyz="0 0 -0.05" rpy="0 0 0"/>
+
+    </dynamic>
+
+</scenario>
