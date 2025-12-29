@@ -15,8 +15,8 @@ Step3:
 Step4: 
   use the below given command to launch the Stonefish simulation.
 
-  ros2 launch stonefish_ros2 stonefish_simulator.launch.py \
-  scenario_desc:=/home/kuhan/ros2_ws/src/stonefish_ros2/resources/scenes/floating_box.scn
+  ros2 launch stonefish_ros2 stonefish_simulator.launch.py scenario_desc:=/home/kuhan/ros2_ws/src/stonefish_ros2/resources/scenes/floating_box.scn
+
 
   here change the directory according to your folders!!
 
